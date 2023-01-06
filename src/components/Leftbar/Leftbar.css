@@ -1,0 +1,39 @@
+.leftbar {
+    background: url(../../assets//images/bg-sidebar-mobile.svg) no-repeat ;
+    background-size: cover;
+    border-radius: 7px;
+    font-family: sans-serif !important;
+ 
+}
+
+.button-num {
+    border-radius: 50% !important;
+    color: white;
+    border: 1px solid white !important;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+
+   
+}
+
+.button-num.active {
+    background: hsl(217, 100%, 97%) !important;
+    color: black;
+    font-weight: 800;
+    border: none;
+}
+.button-num-container:hover{
+    opacity: .6;
+    transition: .6s ease-in;
+    cursor: pointer;
+}
+@media screen and (min-width: 601px) {
+     .leftbar {
+        background: 
+        url(../../assets/images/bg-sidebar-desktop.svg)  no-repeat ;
+         background-size: cover;
+         max-width: 274px !important;
+    
+    }
+}

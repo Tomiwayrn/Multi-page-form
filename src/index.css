@@ -1,0 +1,100 @@
+@import url("https://fonts-googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family:cursive !important;
+  color: hsl(213, 96%, 18%) !important;
+  background: hsl(217, 100%, 97%);
+  font-family: 'Ubuntu' sans-serif !important;
+
+}
+
+.MuiTypography-root {
+  font-family: 'Ubuntu' sans-serif !important;
+} 
+
+
+button{
+  border: none;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  transition: .5s ease-in;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+button:hover {
+  opacity: 0.5;
+  transition: .6s ease-in;
+  cursor: pointer;
+ 
+} 
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-app {
+  background: none;
+  border-radius: 15px !important;
+  box-shadow: none;
+  width: 90%;
+  max-width: 900px;
+  height: 100% !important;
+  
+}
+
+.next-btn {
+  text-transform: capitalize !important;
+  color:  white !important;
+  background: hsl(243, 100%, 62%) !important;
+  position: absolute !important;
+  bottom: 5%;
+  right: 5%;
+  
+}
+
+.back-btn {
+  position: absolute !important;
+  bottom: 5%;
+  left: 5%;
+}
+
+.back-btn:hover  {
+  color:hsl(213, 96%, 18%) !important ;
+  font-weight: 700;
+}
+
+.next-btn:hover {
+  background: hsl(213, 96%, 18%) !important;
+  opacity: .9 !important;
+}
+
+.page {
+  animation: slide .42s ease-in-out;
+}
+
+@keyframes slide {
+  0%{
+    transform: translate(100%);
+  }
+  100%{
+    transform: translate(0%);
+  }
+}
+
+@media screen and (min-width: 600px){
+.main-app {
+  background: white !important;
+  box-shadow: 0px 0px 10px rgb(201, 201, 201);
+  height: auto !important;
+
+}
+}

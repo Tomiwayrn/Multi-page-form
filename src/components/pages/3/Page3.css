@@ -1,0 +1,27 @@
+.val {
+    position: absolute;
+    right: 3%;
+}
+
+.pick-container{
+    position: relative;
+    border: 1px solid hsl(229, 24%, 87%);
+    padding: 14px 0px;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.pick-container:hover{
+    cursor: pointer;
+    transition: .6s ease-in;
+    border: 1px solid  hsl(213, 96%, 18%);
+}
+
+.pick-container.active {
+    border: 1px solid  hsl(213, 96%, 18%);
+   
+}
+
+.pick-container.pick-container.active.css-1t5emme-MuiStack-root {
+background: hsl(217, 100%, 97%)  !important;
+}
